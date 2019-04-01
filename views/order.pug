@@ -1,0 +1,46 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title= title
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata')
+        style.
+            body, html {
+                height: 100%;
+                font-family: "Inconsolata", sans-serif;
+            }
+    body
+        // Links (sit on top)
+        div.w3-top
+            div.w3-row.w3-padding.w3-black
+                div.w3-col.s3
+                    a.w3-button.w3-block.w3-black(href='/') HOME
+                div.w3-col.s3
+                    a.w3-button.w3-block.w3-black(href='/contact') BACK
+        // Add a background color and large text to the whole page
+        div.w3-sand.w3-grayscale.w3-large
+            div.w3-container
+                h5.w3-center.w3-padding-64
+                    span.w3-tag.w3-wide THE ORDER
+                div.w3-container.menu.w3-padding-48.w3-card(style='display: block;')
+                    each order in orders
+                        b Number of order
+                        p.w3-text-grey= order.id
+                        b Name
+                        p.w3-text-grey= order.name
+                        b Number people
+                        p.w3-text-grey= order.number
+                        b Date
+                        p.w3-text-grey= order.date
+                        b Message \ Special requirements
+                        p.w3-text-grey= order.message
+                        b Email
+                        p.w3-text-grey= order.email
+        // Footer
+        footer.w3-center.w3-light-grey.w3-padding-64.w3-large
+            p Powered by
+                |
+                |
+                a.w3-hover-text-green(href='https://www.w3schools.com/' title='W3.CSS') w3.css

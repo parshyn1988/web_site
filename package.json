@@ -1,0 +1,27 @@
+{
+  "name": "web_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "star": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parshyn1988/web_site.git"
+  },
+  "keywords": [],
+  "author": "Y.Parshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parshyn1988/web_site/issues"
+  },
+  "homepage": "https://github.com/parshyn1988/web_site#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "nodemailer": "^6.0.0",
+    "pug": "^2.0.3"
+  }
+}

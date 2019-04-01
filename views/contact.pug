@@ -1,0 +1,31 @@
+extends layout
+block content
+	// Add a background color and large text to the whole page
+	div.w3-sand.w3-grayscale.w3-large
+		// Contact/Area Container
+		div.w3-container(style='padding-bottom:32px;')
+			div.w3-content(style='max-width:700px')
+				h5.w3-center.w3-padding-64
+					span.w3-tag.w3-wide WHERE TO FIND US
+				p Find us at some address at some place.
+				img.w3-image(src='/i/map.jpg' style='width:100%')
+				p
+					span.w3-tag FYI!
+					|  We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.
+				p
+					strong Reserve
+					|  a table, ask for today's special or just send us a message:
+				form(method='post')
+					p
+						input.w3-input.w3-padding-16.w3-border(type='text' placeholder='Name' required='' name='name')
+					p
+						input.w3-input.w3-padding-16.w3-border(type='number' placeholder='How many people' required='' name='number')
+					p
+						input.w3-input.w3-padding-16.w3-border(type='datetime-local' placeholder='Date and time' required='' name='date' value='2019-11-16T20:00')
+					p
+						input.w3-input.w3-padding-16.w3-border(type='text' placeholder='Message \\ Special requirements' required='' name='message')
+					p
+						input.w3-input.w3-padding-16.w3-border(type='email' placeholder='Your email' required='' name='email')
+					p
+						button.w3-button.w3-black(type='submit') SEND MESSAGE
+		// End page content
