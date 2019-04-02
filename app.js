@@ -77,6 +77,6 @@ app.post('/contact', function(req, res) {
 
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 5000, function() {
 	console.log('app is listened at localhost:3000');
 });
